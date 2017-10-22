@@ -2,9 +2,10 @@
 <html>
     <head>
             <meta charset="UTF-8" />
+            <title>Temperature Conversion</title>
         <style>
             table 
-            { 
+            {
                 border:2px solid blue; 
                 text-align:right; 
                 width: 80%; 
@@ -12,7 +13,7 @@
                 font-size: 2em
             }
             th 
-            { 
+            {
                 width:30px;
                 color: red; 
                 border:1px solid yellow; 
@@ -43,41 +44,43 @@
         <?php
             }
             // Sample PHP to display a multiplication table
-            else if ( $_POST["trasfer"]) == "f2c")
+            else
             {
-                print("<t1>Temperature Conversion <t1>");
-                print("<table>\n");
-                print("<tr>\n"); // table row for the heading`
-                print("<th> </th>"); // top left corner is an empty cell
-                print ("<th>Fahrenheit </th>");
-                print ("<th>Celsius </th>");
-                print("</tr>\n"); // end of the heading row
-                for ( $i =  $_POST["start"] ; $i <=  $_POST["end"] ; $i = $i +  $_POST["increment"] )
+                $type = $_POST["trasfer"];
+                if($type == "f2c")
                 {
-                    print("<tr>");
-                    print("<th>$i</th>");
-                    print("<td>" . (($i / 9) * 5) -32  . "</td>" ) ;
-                    print("</tr>");
+                    print("<h1>Temperature Conversion</h1>\n");
+                    print("<table>\n");
+                    print("<tr>\n"); // table row for the heading
+                    print ("<th>Fahrenheit </th>");
+                    print ("<th>Celsius </th>");
+                    print("</tr>\n"); // end of the heading row
+                    for ( $i =  $_POST["start"] ; $i <=  $_POST["end"] ; $i = $i +  $_POST["increment"] )
+                    {
+                        print("<tr>");
+                        print("<th>$i</th>");
+                        print("<td>" . ((($i-32) / 9) * 5)  ."</td>" ) ;
+                        print("</tr>");
+                    }
+                    print("</table>\n");
                 }
-                print("</table>\n");
-            }
-            else if ( $_POST["trasfer"]) == "c2f")
-            {
-                print("<t1>Temperature Conversion <t1>");
-                print("<table>\n");
-                print("<tr>\n"); // table row for the heading`
-                print("<th> </th>"); // top left corner is an empty cell
-                print ("<th>Celsius </th>");
-                print ("<th>Fahrenheit </th>");
-                print("</tr>\n"); // end of the heading row
-                for ( $i =  $_POST["start"] ; $i <=  $_POST["end"] ; $i = $i +  $_POST["increment"] )
+                if($type == "c2f")
                 {
-                    print("<tr>");
-                    print("<th>$i</th>");
-                    print("<td>" . (($i * 9) / 5) + 32  . "</td>" ) ;
-                    print("</tr>");
+                    print("<h1>Temperature Conversion</h1>\n");
+                    print("<table>\n");
+                    print("<tr>\n"); // table row for the heading
+                    print ("<th>Celsius </th>");
+                    print ("<th>Fahrenheit </th>");
+                    print("</tr>\n"); // end of the heading row
+                    for ( $i =  $_POST["start"] ; $i <=  $_POST["end"] ; $i = $i +  $_POST["increment"] )
+                    {
+                        print("<tr>");
+                        print("<th>$i</th>");
+                        print("<td>" . ((($i * 9) / 5) + 32)  . "</td>" ) ;
+                        print("</tr>");
+                    }
+                    print("</table>\n");
                 }
-                print("</table>\n");
             }
         ?>
     </body>
