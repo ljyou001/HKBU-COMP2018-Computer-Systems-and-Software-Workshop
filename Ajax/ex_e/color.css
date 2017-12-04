@@ -1,0 +1,26 @@
+body, #InputField
+{
+	font: 1.2em arial, helvetica, sans-serif;
+}
+
+#PullDownMenu
+{
+	position: absolute;
+}
+
+#InputField.error
+{ 
+	background-color: yellow ;
+}
+
+div.pulldownlist
+{
+	background-color: white;
+	padding: 2px 6px;
+	border: 1px solid red;
+}
+
+div.pulldownlist:hover
+{
+	background-color: blue ;
+}
