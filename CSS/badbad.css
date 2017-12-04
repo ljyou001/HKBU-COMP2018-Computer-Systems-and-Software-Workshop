@@ -1,0 +1,4 @@
+/* Note: this is a BAD example. This is to show you how BAD you can sytle a web page */
+hr {color: white ; background-color: green ; height: 10px }
+p {margin-left: 10%; margin-right: 10% }
+body {color: yellow ; background-color: black ; background-image: url("images/logo.gif")}

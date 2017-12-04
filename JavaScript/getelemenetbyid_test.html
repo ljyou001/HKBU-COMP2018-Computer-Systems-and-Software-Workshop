@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- getelementbyid_test.html -->
+<html>
+<head>
+<title>Sample getElementById call</title>
+<script>
+function getInnerText( idName ) {
+	alert ( document.getElementById( idName ).innerHTML );
+}
+</script>
+</head>
+<body>	
+<p id="Here">
+	Hello! How are you today?
+</p>
+<form>
+<input type="button" value="Click Here" onclick="getInnerText('Here')" />
+</form>
+</body>
+</html>

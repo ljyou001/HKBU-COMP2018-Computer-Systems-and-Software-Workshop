@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- SumArray.html     -->
+<!-- Summing Elements of an Array -->
+<html>
+<head>
+<title>Sum the Elements of an Array</title>
+<script type = "text/javascript">
+
+   function start()
+   {
+      var theArray = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+      var total1 = 0, total2 = 0;
+
+      for ( var i = 0; i < theArray.length; i++ ) 
+         total1 += theArray[ i ];                 
+  
+      document.writeln( "Total using subscripts: " + total1 );
+
+      for ( var element in theArray )  
+         total2 += theArray[ element ];
+   
+      document.writeln( "<br />Total using for...in: " + total2 );
+   }
+</script>
+</head><body onload = "start()"></body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- interest.html -->
+<!-- Using the for repetition statement -->
+<html>
+<head>
+<title>Calculating Compound Interest</title>
+<script type = "text/javascript">
+
+   var amount, principal = 1000.0, rate = .05;
+  
+   document.writeln("<table border = \"1\" width = \"100%\">" );
+   document.writeln("<caption>Calculating Compound Interest</caption>" );
+   document.writeln("<thead><tr><th align = \"left\">Year</th>" );
+   document.writeln("<th align = \"left\">Amount on deposit</th>" );
+   document.writeln( "</tr></thead>" );
+   for ( var year = 1; year <= 10; ++year )
+   {
+      amount = principal * Math.pow( 1.0 + rate, year );
+      document.writeln( "<tbody><tr><td>" + year + "</td><td>"
+                      + Math.round( amount * 100 ) / 100
+                      + "</td></tr>" );
+   }
+  
+   document.writeln( "</tbody></table>" );
+</script>
+</head><body></body>
+</html>

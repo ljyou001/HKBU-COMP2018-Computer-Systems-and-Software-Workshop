@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- check_browser.html -->
+<html>
+<head>
+<script>
+// This program try to check the browser using DOM navigator.userAgent
+
+function which_browser()
+{
+    var user_agent = navigator.userAgent ;
+	document.writeln("<!-- "+ user_agent + "-->" );
+    var version, cur_string_pos, browser, os, hw = "PC" ;
+
+    if ( user_agent.indexOf( "OPR" ) >= 0 )
+       { browser = "Opera" ;
+         version = user_agent.substring( user_agent.indexOf( "OPR/" ) + 4 , user_agent.length ) ;
+       }
+    else if ( user_agent.indexOf( "Firefox" ) >= 0 )
+       { browser = "Firefox" ;
+         version = user_agent.substring( user_agent.indexOf( "Firefox/" ) + 8 , user_agent.length ) ;
+       }
+    else if ( user_agent.indexOf( "MSIE" ) >= 0 )
+       { browser = "IE" ;
+         cur_string_pos = user_agent.indexOf ( "MSIE" ) + 5 ;          
+         version = user_agent.substring( cur_string_pos ,user_agent.indexOf( ";", cur_string_pos) );
+       }
+    else if ( user_agent.indexOf( "Chrome" ) >= 0 )
+       { browser = "Chrome" ;
+         cur_string_pos = user_agent.indexOf ( "Chrome/" ) + 7 ;          
+         version = user_agent.substring( cur_string_pos ,user_agent.indexOf( " ", cur_string_pos) );
+       }
+    else if ( user_agent.indexOf( "Safari" ) >= 0 )
+       { browser = "Safari" ;
+         cur_string_pos = user_agent.indexOf ( "Version/" ) + 8 ;          
+         version = user_agent.substring( cur_string_pos ,user_agent.indexOf( " ", cur_string_pos) );
+       }
+
+    if ( user_agent.indexOf( "Windows" ) >= 0 )
+       { os = "Windows" ;
+       }
+    else if ( user_agent.indexOf( "Linux" ) >= 0 )
+       { os = "Linux" ;
+       }
+    else if ( user_agent.indexOf( "Mac OS" ) >= 0 )
+       { os = "Mac OS" ;
+       }
+
+    if ( user_agent.indexOf( "iPhone" ) >= 0 )
+       { hw = "iPhone" ;
+       }
+    else if ( user_agent.indexOf( "iPad" ) >= 0 )
+       { hw = "iPad" ;
+       }
+    else if ( user_agent.indexOf( "Android" ) >= 0 )
+       { hw = "Android" ;
+       }
+    else if ( user_agent.indexOf( "Macintosh" ) >= 0 )
+       { hw = "Macintosh" ;
+       }
+
+    document.writeln( "You are running <span style=\"color:red\"> " + browser + "</span>"
+                      + " version <span style=\"color:orange\"> " + version + "</span>"
+                      + " on a <span style=\"color:blue\"> " + os + "</span> system.<br />"
+                      + "Your machine is a <span style=\"color:green\"> " + hw + "</span>."
+                    );
+}
+</script>
+<body>
+<button onclick="which_browser()">Check your current browser</button>
+</body>
+</html>

@@ -1,0 +1,20 @@
+H1		{
+		font-family:	"Copperplate Gothic Bold";
+		background:	transparent;
+		color:		#993300;
+		text-align:	center;
+		}
+H2, H3, H4, H5	{
+		background:	transparent;
+		color:		#993300;
+		margin-top:	4%;
+		text-align:	center;
+		}
+Body.Plain	Div.Abstract,
+Body.Plain	P.Abstract	{
+		background:	#cccc99;
+		color:		#333300;
+		border:		white;
+		padding:	3%;
+		font-family:	Times, Verdana;
+		}

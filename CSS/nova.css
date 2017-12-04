@@ -1,0 +1,38 @@
+TD.Nova,	
+Body.Nova	{	background:	#000000;
+			font-family:	"Times New Roman";
+			font-weight:	light;
+			color:		#ffcc00;
+			}
+Body.Nova A.Button{	background:	gold;
+			color:		#003366;	}
+Body.Nova A.Banner{	background:	transparent;
+			color:		#003366;	}
+Body.Nova A	{	background:	transparent;
+			text-decoration:	none;
+			color:		#ffd766;	}
+Body.Nova	H1,
+Body.Nova	H2,
+Body.Nova	H3,
+Body.Nova	H4	{
+		background:	transparent;
+		color:		white;
+		margin-top:	4%;
+		text-align:	center;
+		filter:		Blur(Add=1, Direction=0, Strength=8);
+		}
+Body.Nova Div.Abstract	{
+		background:	#000000;
+		color:		#ffffff;
+		font-family:	Times, Verdana;
+		}
+Body.Nova A.Abstract	{
+		background:	transparent;
+		color:		#ffeedd;
+		}
+Body.Nova TH.LuT {	background:	black;
+			color:		#ffff99;
+			}
+Body.Nova TD.LuT {	background:	navy;
+			color:		#ffff99;
+			}

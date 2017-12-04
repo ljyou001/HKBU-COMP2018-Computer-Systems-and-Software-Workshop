@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- average.html -->
+<!-- Class Average Program  -->
+<html>
+<head>
+<title>Class Average Program</title>  
+<script type = "text/javascript">
+   var total,          // sum of grades
+       gradeCounter,   // number of grades entered
+       gradeValue,     // grade value
+       average,        // average of all grades
+       grade;          // grade typed by user  
+   total = 0;          // clear total
+   gradeCounter = 1;   // prepare to loop
+   while ( gradeCounter <= 10 )
+   {
+      grade = window.prompt( "Enter integer grade:", "0" );
+ 
+      // convert grade from a string to an integer
+      gradeValue = parseInt( grade );
+      if ( isNaN( gradeValue ) ) continue ;
+         // go to the top of the while loop, input again
+  
+      // add gradeValue to total
+      total = total + gradeValue;  
+  
+      // add 1 to gradeCounter
+      gradeCounter = gradeCounter + 1;
+   }
+   average = total / 10;  // calculate the average
+   document.writeln("<h1>Class average is " + average + "</h1>" );
+</script>
+</head>
+<body>
+<p>Refresh (or Reload) to run the script again</p>
+</body>
+</html>

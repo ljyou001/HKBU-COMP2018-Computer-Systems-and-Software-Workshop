@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- arraytest.html -->
+<!-- Initializing an Array -->
+<html>
+<head>
+<title>Initializing an Array</title>
+<script type = "text/javascript">
+
+   // this function is called when the <body> element's 
+   // onload event occurs
+   function initializeArrays()
+   {
+      var n1 = new Array( 5 );   // allocate 5-element Array
+      var n2 = new Array();      // allocate empty Array    
+                      
+      // assign values to each element of Array n1  
+      for ( var i = 0; i < n1.length; ++i )     
+            n1[ i ] = i;
+                                                  
+      // create and initialize four-elements in Array n2
+      for ( i = 0; i < 4; ++i )
+                  n2[ i ] = i * 2 ;
+      
+      outputArray( "Array n1 contains", n1 );
+      outputArray( "Array n2 contains", n2 );
+   }
+  
+   // output "header" followed by a two-column table 
+   // containing subscripts and elements of "theArray"  
+   function outputArray( header, theArray )
+   {
+      document.writeln( "<h2>" + header + "</h2>" );
+      document.writeln( "<table border = \"1\" width =" + "\"100%\">" );
+      document.writeln( "<thead><th width = \"100\"" +
+                        "align = \"left\">Subscript</th>" +
+                        "<th align = \"left\">Value</th></thead><tbody>" ); 
+      
+      for ( var i = 0; i < theArray.length; i++ ) 
+          document.writeln( "<tr><td>" + i + "</td><td>" +
+                            theArray[ i ] + "</td></tr>" );
+      document.writeln( "</tbody></table>" );
+   }
+</script>
+</head>
+<body onload = "initializeArrays()">
+</body>
+</html>
+

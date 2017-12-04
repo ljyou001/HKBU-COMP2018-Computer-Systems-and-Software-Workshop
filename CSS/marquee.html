@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<title>marquee example</title>
+<meta charset="utf=8" />
+<style type="text/css">
+.marquee {
+width:600px;
+height:100px;
+padding:5px;
+font-size:40px;
+background-color: blue;
+border: 10px solid rgba(0,0,0,0.2);
+white-space: nowrap; 
+overflow: hidden;
+
+/* Safari */
+overflow-x:-webkit-marquee;
+-webkit-marquee-direction: backwards;
+-webkit-marquee-style: scroll;
+-webkit-marquee-speed: fast;
+-webkit-marquee-increment: small;
+-webkit-marquee-repetition: infinite;
+
+/* The CSS3 standard if any browser implement them */
+overflow-x: marquee-line;
+marquee-direction: forward;
+marquee-style: scroll;
+marquee-speed: fast;
+marquee-play-count: infinite;
+}
+</style>
+</head>
+<body>
+<div class="marquee">
+<p>The line may roll . . . . . . I hope!</p>
+</div>
+</body>
+</html>

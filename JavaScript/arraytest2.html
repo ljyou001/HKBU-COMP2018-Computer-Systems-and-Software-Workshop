@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- arraytest2.html -->
+<!-- Initializing an Array with a Declaration -->
+<html>
+<head>
+<title>Initializing an Array with a Declaration</title>
+<script src="outputarray.js" type = "text/javascript">
+</script>
+<script type = "text/javascript">
+
+   function start()
+   {
+      // Initializer list specifies number of elements and
+      // value for each element.
+      var colors = new Array( "cyan", "magenta", "yellow", "black" );                    
+      var integers1 = [ 2, 4, 6, 8 ];            
+      var integers2 = [ 2, , , 8 ];              
+     
+      outputArray( "Array colors contains", colors );
+      outputArray( "Array integers1 contains", integers1 );
+      outputArray( "Array integers2 contains", integers2 );
+   }
+
+</script>
+</head>
+<body onload = "start()">
+</body>
+</html>

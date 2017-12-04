@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- squarefun.html -->
+<!-- Square function -->
+<html>
+<head>
+<title>A Programmer-Defined square Function</title>
+<script type = "text/javascript">
+
+   document.writeln("<h1>Square the numbers from 1 to 10</h1>" );
+
+   // square the numbers from 1 to 10
+   for ( var x = 1; x <= 10; ++x ) 
+      document.writeln( "The square of " + x
+                        + " is " + square( x ) + "<br />" );
+
+   // The following square function's body is executed  
+   // only when the function is explicitly called.
+     
+   // square function definition 
+   function square( y )
+   {                   
+      return y * y;    
+   }                   
+</script>
+</head><body></body>
+</html>

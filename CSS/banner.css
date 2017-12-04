@@ -1,0 +1,103 @@
+/* Page 12 to Page 14 */
+TH.Xmp		{	background:	#eeeeee;
+			color:	        #330066;
+			font-family:	courier;
+			font-weight:	normal;
+			}
+TH.LuT		{	background:	#cccccc;
+			color:		#000000;
+			}
+TD.LuT		{	background:	#ffffcc;
+			color:		#000000;
+			font-size:	85%;
+			}
+TH.Info, TD.Info	{
+		background:	#ffffcc;
+		color:		#660000;
+		font-family:	"Comic Sans MS", 
+				Cursive, Verdana;
+		font-size:	smaller;
+		}
+Div.Info, P.Info	{
+		background:	#ffff99;
+		color:		#990033;
+		text-align:	left;
+		padding:	2%;
+		font-family:	"Comic Sans MS", 
+				Cursive, Verdana;
+		font-size:	85%;
+		}
+Div.Info A	{	background:	transparent;
+			color:		#ff6600;		}
+.HL		{
+		background:	#ffff99;
+		color:		#000000;
+		}
+TD.HL		{
+		background:	#ccffff;
+		color:		#000000;
+		}
+Div.Margins	{
+		width:		512px;
+		text-align:	center;
+		}
+TD.Plain		{
+		background:	#ffffcc;
+		color:		#000033;
+		}
+.Type	{
+	background:	#cccccc;
+	color:		#660000;
+	}
+.Name	{
+	background:	#eeeeee;
+	color:		#660000;
+	vertical-align:	top;
+	text-align:	right;
+	}
+.Value	{
+	background:	#ffffee;
+	color:		#000066;
+	}
+.Drop	{	background:	#333366;
+		color:		#ffcc33;
+		font-family:	"Copperplate Gothic Light",
+				Helvetica, Verdana, Arial;
+        }
+A.Button:hover	{	color:	#ff6600;	}
+
+A.Button{
+	text-decoration: none;
+	color:		#003366;
+	background:	#ffcc66;
+	}
+
+.Button	{
+	font-size:	9pt;
+	text-align:	center;
+	text-decoration: none;
+	color:		#003366;
+	background:	#ffcc66;
+	margin-bottom:	2pt;
+	border-top:	2px solid #ffff99;
+	border-left:	2px solid #ffff99;
+	border-right:	2px solid #cc9933;
+	border-bottom:	2px solid #cc9933;
+	font-family:	Verdana, Arial,
+			"Comic Sans MS";
+	}
+
+.Banner	{
+	width:		468;
+	font-size:	12pt;
+	text-align:	center;
+	text-decoration: none;
+	color:		#003366;
+	background:	#ffcc66;
+	border-top:	4px solid #ffff99;
+	border-left:	4px solid #ffff99;
+	border-right:	4px solid #cc9933;
+	border-bottom:	4px solid #cc9933;
+	font-family:	Verdana, Arial,
+			"Comic Sans MS";
+	}

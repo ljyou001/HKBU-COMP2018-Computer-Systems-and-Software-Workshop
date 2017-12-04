@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- average2.html        -->
+<!-- Sentinel-controlled Repetition -->
+<html>
+<head>
+<title>Class Average Program: Sentinel-controlled Repetition</title>
+<script type = "text/javascript">
+
+   var gradeCounter,  // number of grades entered
+       gradeValue,    // grade value
+       total,         // sum of grades
+       average,       // average of all grades
+       grade;         // grade typed by user
+
+   total = 0;         // clear total
+   gradeCounter = 0;  // prepare to loop
+
+   while ( true )
+   {
+      grade = window.prompt( "Enter Integer Grade, -1 to Quit:", "0" );
+      gradeValue = parseInt( grade );
+      if ( isNaN( gradeValue ) ) continue ;
+      else if ( gradeValue == -1 ) break ;
+
+      total = total + gradeValue;
+      gradeCounter = gradeCounter + 1;
+   }
+   if ( gradeCounter != 0 )
+   {
+      average = total / gradeCounter;  
+      document.writeln( "<h1>Class average is " + average + "</h1>" );
+   }
+   else
+      document.writeln( "<p>No grades were entered</p>" );
+</script>
+</head>
+<body>
+<p>Refresh (or Reload) to run the script again</p>
+</body>
+</html>
+
+

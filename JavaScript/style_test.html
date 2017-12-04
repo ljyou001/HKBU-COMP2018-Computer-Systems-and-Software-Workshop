@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- style_test.html -->
+<html>
+<head>
+<script type="text/javascript">
+   window.onload = init;
+   function init()
+   {
+      var mydiv = document.getElementById('myDiv');
+      mydiv.onclick = function () { // this is called in-line function that does not need a name
+                                    this.style.backgroundColor = '#0f0';
+                                  };
+   }
+   function hide_it( a )
+   {
+      var myobj = document.getElementById( a ) ;
+      myobj.style.visibility = "hidden" ;
+   }
+   function show_it( a )
+   {
+      var myobj = document.getElementById( a ) ;
+      myobj.style.visibility = "visible" ;
+   }
+
+</script>
+</head>
+<body>
+<h1 id="myDiv">
+Click me to change color!
+</h1>
+<br />
+<button onclick = "hide_it( 'myDiv' )">Hide the above heading</button> 
+<br /><br />
+<button onclick = "show_it( 'myDiv' )">Show the above heading</button> 
+</body>
+<html>

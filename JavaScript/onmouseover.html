@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>This is my second web page</title>
+<script type="text/javascript">
+function setbgcolor( colorcode, textcolor )
+{ document.bgColor = colorcode ;
+document.fgColor = textcolor ;
+}
+</script>
+</head>
+<body>
+<h1>
+Welcome!<br>
+This is the Web page of Chan Sui Ming
+</h1>
+<h1>Move the mouse on top of the color name</h1>
+<br>
+<h3 onMouseOver="setbgcolor( '#FF0000','#FFFFFF')"
+onMouseOut="setbgcolor( '#FFFFFF', '#000000')"
+>Red (#FF0000)</h3>
+<h3 onMouseOver="setbgcolor( '#0000FF','#FFFF00')"
+onMouseOut="setbgcolor( '#FFFFFF', '#000000')"
+>Blue (#0000FF)</h3>
+</body>
+</html>
